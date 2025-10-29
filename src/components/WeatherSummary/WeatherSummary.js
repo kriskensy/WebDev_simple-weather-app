@@ -2,7 +2,6 @@ import styles from './WeatherSummary.module.scss';
 import Loader from '../Loader/Loader';
 
 const WeatherSummary = ({ data }) => {
-  if(!data) return <Loader />
 
   const weatherData = {
     city: data.name,
